@@ -149,10 +149,10 @@ export default defineConfig({
 				if (pathname === "/sponsor/" && !siteConfig.pages.sponsor) {
 					return false;
 				}
-				if (pathname === "/guestbook/" && !siteConfig.pages.guestbook) {
+				if (pathname === "/muro/" && !siteConfig.pages.guestbook) {
 					return false;
 				}
-				if (pathname === "/bangumi/" && !siteConfig.pages.bangumi) {
+				if (pathname === "/colecciones/" && !siteConfig.pages.bangumi) {
 					return false;
 				}
 

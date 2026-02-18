@@ -11,29 +11,29 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
-		title: "夏夜流萤",
-		imgurl: "https://q1.qlogo.cn/g?b=qq&nk=7618557&s=640",
-		desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
-		siteurl: "https://blog.cuteleaf.cn",
-		tags: ["Blog"],
+		title: "ChoxyPop",
+		imgurl: "https://cdn.choxypop.com/profile.webp",
+		desc: "La persona detras de todo esto.",
+		siteurl: "https://docs.choxypop.com",
+		tags: ["Creador"],
 		weight: 10, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
 	},
 	{
-		title: "Firefly Docs",
+		title: "Mafiul8",
 		imgurl: "https://docs-firefly.cuteleaf.cn/logo.png",
-		desc: "Firefly主题模板文档",
-		siteurl: "https://docs-firefly.cuteleaf.cn",
-		tags: ["Docs"],
+		desc: "El artista detras de todos los dibujos.",
+		siteurl: "https://x.com/Mafiul8",
+		tags: ["Artista"],
 		weight: 9,
 		enabled: true,
 	},
 	{
-		title: "Astro",
+		title: "AstarDev",
 		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
-		desc: "The web framework for content-driven websites. ⭐️ Star to support our work!",
-		siteurl: "https://github.com/withastro/astro",
-		tags: ["Framework"],
+		desc: "El modelador 3D detras de los rendesrs y modelos 3D.",
+		siteurl: "https://x.com/astardev",
+		tags: ["Modelador 3D"],
 		weight: 8,
 		enabled: true,
 	},

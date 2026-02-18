@@ -6,7 +6,7 @@ import type { AdConfig } from "../types/config";
 export const adConfig1: AdConfig = {
 	image: {
 		src: "assets/images/cover.avif",
-		alt: "广告横幅",
+		alt: "Portada del sitio web",
 		link: "#",
 		external: true,
 	},
@@ -41,18 +41,18 @@ export const adConfig1: AdConfig = {
 
 // 广告配置2 - 完整内容广告
 export const adConfig2: AdConfig = {
-	title: "支持博主",
+	title: "Titulo adConfig.ts",
 	content:
-		"如果您觉得本站内容对您有帮助，欢迎支持我们的创作！您的支持是我们持续更新的动力。",
+		"Contenido adConfig.ts",
 	image: {
 		src: "assets/images/cover.avif",
-		alt: "支持博主",
-		link: "about/",
+		alt: "Sobre mi",
+		link: "info/",
 		external: false,
 	},
 	link: {
-		text: "支持一下",
-		url: "about/",
+		text: "Sobre Mi",
+		url: "Info/",
 		external: false,
 	},
 	closable: true,

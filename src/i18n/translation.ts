@@ -1,5 +1,7 @@
+import { escapeHTML } from "astro/runtime/server/escape.js";
 import { siteConfig } from "../config";
 import type I18nKey from "./i18nKey";
+import { es } from "./languages/es";
 import { en } from "./languages/en";
 import { ja } from "./languages/ja";
 import { ru } from "./languages/ru";
@@ -10,9 +12,10 @@ export type Translation = {
 	[K in I18nKey]: string;
 };
 
-const defaultTranslation = en;
+const defaultTranslation = es;
 
 const map: { [key: string]: Translation } = {
+	es: es,
 	en: en,
 	en_us: en,
 	en_gb: en,
