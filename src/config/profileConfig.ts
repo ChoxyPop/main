@@ -12,7 +12,7 @@ export const profileConfig: ProfileConfig = {
 	name: "Choxy",
 
 	// 个人签名
-	bio: "Hola, soy ChoxyPop, un femboy.",
+	bio: "Lleno de dulzura, diversión y mucha creatividad, así soy yo, tu femboy celeste. 😉🩵 ",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons

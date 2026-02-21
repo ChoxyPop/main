@@ -35,7 +35,7 @@ export const sponsorConfig: SponsorConfig = {
 			link: "",
 			description: "使用 微信 扫码赞助",
 			enabled: true,
-		},
+		},*/
 		{
 			name: "ko-fi",
 			icon: "simple-icons:kofi",
@@ -43,7 +43,7 @@ export const sponsorConfig: SponsorConfig = {
 			link: "https://ko-fi.com/choxypop",
 			description: "Compra un Cafe para Choxy",
 			enabled: true,
-		},*/
+		},
 		/*{
 			name: "爱发电",
 			icon: "simple-icons:afdian",
@@ -56,12 +56,12 @@ export const sponsorConfig: SponsorConfig = {
 
 	// 赞助者列表（可选）
 	sponsors: [
-		// 示例：已实名赞助者
+		/* 示例：已实名赞助者
 		{
 			name: "Choxy",
 			amount: "$30/mes",
 			date: "2025",
 			message: "El dinero que invierto para pagar el servidor y demás proyectos.",
-		},
+		},*/
 	],
 };
