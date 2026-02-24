@@ -21,7 +21,7 @@ export const friendsConfig: FriendLink[] = [
 	},
 	{
 		title: "Mafiul8",
-		imgurl: "https://docs-firefly.cuteleaf.cn/logo.png",
+		imgurl: "https://cdn.choxypop.com/mafiul8.png",
 		desc: "El artista detras de todos los dibujos.",
 		siteurl: "https://x.com/Mafiul8",
 		tags: ["Artista"],
@@ -30,7 +30,7 @@ export const friendsConfig: FriendLink[] = [
 	},
 	{
 		title: "AstarDev",
-		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
+		imgurl: "https://cdn.choxypop.com/astardev.jpg",
 		desc: "El modelador 3D detras de los rendesrs y modelos 3D.",
 		siteurl: "https://x.com/astardev",
 		tags: ["Modelador 3D"],

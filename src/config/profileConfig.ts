@@ -27,5 +27,11 @@ export const profileConfig: ProfileConfig = {
 			url: "mailto:info@choxypop.com",
 			showName: false,
 		},
+		{
+			name: "WhatsApp",
+			icon: "simple-icons:whatsapp",
+			url: "https://go.choxypop.com/wa",
+			showName: false,
+		},
 	],
 };

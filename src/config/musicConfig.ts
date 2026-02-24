@@ -78,7 +78,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
                 name: "Música de ascensor",
                 artist: "Desconocido",
                 url: "/assets/music/Musica-de-Ascensor.m4a", // Archivo local en el repo
-                cover: "", // Sin portada
+                cover: "/assets/music/cover/ascensor.jpg", // Portada local
                 lrc: ""
             },
             {

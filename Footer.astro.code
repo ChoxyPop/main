@@ -1,0 +1,5 @@
+reservados. / <a
+        class="transition link text-(--primary) font-medium"
+        target="_blank"
+        href={url("rss.xml")}>RSS</a
+      >
