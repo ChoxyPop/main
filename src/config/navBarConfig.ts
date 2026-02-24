@@ -30,13 +30,19 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				name: "Documentación",
 				url: "https://docs.choxypop.com/",
 				external: true,
-				icon: "fa7-brands:github",
+				icon: "fa7-solid:clipboard-list",
 			},
 			{
-				name: "Bilibili",
-				url: "https://space.bilibili.com/38932988",
+				name: "Linktree",
+				url: "https://go.choxypop.com/",
 				external: true,
-				icon: "fa7-brands:bilibili",
+				icon: "fa7-solid:tree",
+			},
+			{
+				name: "Blog",
+				url: "https://blog.choxypop.com/",
+				external: true,
+				icon: "fa7-solid:newspaper",
 			},
 		],
 	});
