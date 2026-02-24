@@ -1,4 +1,4 @@
-# ✨ Sobre Choxy ✨
+# ✨ Sobre mí ✨
 
 ¡Hola! Soy **Choxy**, el corazón y la mente detrás de **ChoxyPop**. Más que un personaje, Choxy es mi identidad, mi refugio y la forma en que comparto mi mundo con ustedes. Soy un chico de color celeste, con un estilo femboy único y una personalidad dulce y juguetona.
 
