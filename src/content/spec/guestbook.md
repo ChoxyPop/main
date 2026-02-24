@@ -1,9 +1,9 @@
 ---
-title: "留言板"
-description: "在这里留下你的足迹"
+title: "Muro"
+description: "Muro de Choxy donde puedes dejar tus sugerencias o opiniones sobre nuestros proyectos."
 ---
 
-- 请保持友善和尊重，营造良好的交流氛围
-- 欢迎分享你的想法，也可以提出对网站的建议
-- 你的每一条留言都是对我最大的支持 ✨
+- Inicia sesión con tu cuenta de GitHub o crea una gratis y rapido.
+- Deja tu comentario sobre una sugerencia o opinión.
+- ¡Te responderemos lo antes posible, muchas gracias por tu aporte!
 
