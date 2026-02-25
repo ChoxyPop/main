@@ -104,14 +104,14 @@ export class TOCManager {
 		const headings = this.getAllHeadings();
 
 		if (headings.length === 0) {
-			return '<div class="text-center py-8 text-gray-500 dark:text-gray-400"><p>当前页面没有目录</p></div>';
+			return '<div class="text-center py-8 text-gray-500 dark:text-gray-400"><p>La página actual no tiene tabla de contenido</p></div>';
 		}
 
 		this.minDepth = this.calculateMinDepth(headings);
 		const filteredHeadings = this.filterHeadings(headings);
 
 		if (filteredHeadings.length === 0) {
-			return '<div class="text-center py-8 text-gray-500 dark:text-gray-400"><p>当前页面没有目录</p></div>';
+			return '<div class="text-center py-8 text-gray-500 dark:text-gray-400"><p>La página actual no tiene tabla de contenido</p></div>';
 		}
 
 		let tocHTML = "";
@@ -430,5 +430,5 @@ export class TOCManager {
  * 检查是否为文章页面
  */
 export function isPostPage(): boolean {
-	return window.location.pathname.includes("/contenido/");
+	return window.location.pathname.includes("/");
 }

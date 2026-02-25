@@ -132,7 +132,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 是否在文章详情页显示
 			showOnPostPage: true,
 			// 是否在非文章详情页显示
-			showOnNonPostPage: false,
+			showOnNonPostPage: true,
 		},
 		{
 			// 组件类型：广告栏组件 2
