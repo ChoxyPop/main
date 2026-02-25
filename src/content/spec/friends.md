@@ -1,6 +1,7 @@
 -----
 
-## title: "Enlaces Amigos" description: "Creciendo junto a amigos excelentes"
+## title: "" 
+#description: "Lista de miembros de nuestro equipo y como unirte a él."
 
 -----
 

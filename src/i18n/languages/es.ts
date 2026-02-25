@@ -3,7 +3,7 @@ import type { Translation } from "../translation";
 
 export const es: Translation = {
 	[Key.home]: "Inicio",
-	[Key.about]: "Sobre mi",
+	[Key.about]: "Sobre mí",
 	[Key.archive]: "Archivo",
 	[Key.search]: "Buscar",
 	[Key.searchNoResults]: "No se encontraron resultados.",
@@ -18,7 +18,7 @@ export const es: Translation = {
 	[Key.tags]: "Etiquetas",
 	[Key.categories]: "Categorías",
 	[Key.recentPosts]: "Contenido Reciente",
-	[Key.postList]: "Lista de Contenido",
+	[Key.postList]: "Lista de Contenidos",
 	[Key.tableOfContents]: "Tabla de Contenido",
 	[Key.music]: "Música",
 	[Key.musicNoPlaying]: "Nada sonando",
@@ -54,7 +54,7 @@ export const es: Translation = {
 		"Aquí esta nuestro equipo, sean bienvenidos a seguirnos en nuestras redes y contactarnos.",
 	[Key.guestbook]: "Muro",
 	[Key.guestbookDescription]:
-		"Bienvenido a dejar tu huella aquí, comparte tus pensamientos, opinión y sugerencias",
+		"Bienvenido a dejar tu huella aquí, comparte tus pensamientos, opinión y sugerencias.",
 	[Key.untitled]: "Sin título",
 	[Key.uncategorized]: "Sin categoría",
 	[Key.noTags]: "Sin etiquetas",
@@ -218,11 +218,11 @@ export const es: Translation = {
 	[Key.sponsorGoTo]: "Ir a apoyar",
 	[Key.sponsorButton]: "Apoyar y Compartir",
 	[Key.sponsorButtonText]:
-		"Si este artículo te ayudó, ¡por favor compártelo o apóyame!",
+		"Si este proyecto te interesa, ¡por favor compártelo o apóyame!",
 
-	[Key.shareOnSocial]: "Compartir Artículo",
+	[Key.shareOnSocial]: "Compartir Proyecto",
 	[Key.shareOnSocialDescription]:
-		"Si este artículo te ayudó, ¡compártelo con otros!",
+		"Si este proyecto te interesa, ¡compártelo con otros!",
 
 	[Key.siteStats]: "Estadísticas del Sitio",
 	[Key.siteStatsPostCount]: "Proyectos",

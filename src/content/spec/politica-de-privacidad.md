@@ -1,6 +1,6 @@
 ---
 title: "Política de Privacidad"
-description: "Transparencia total sobre el manejo de tus datos en ChoxyPop."
+description: "Todo sobre el manejo de tus datos en nuestro sitio."
 published: 2026-01-01
 updated: 2026-02-23
 ---
