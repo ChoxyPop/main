@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "Sitio oficial",
 
 	// 站点 URL
-	site_url: "http://test.choxypop.com",
+	site_url: "https://choxypop.com",
 
 	// 站点描述
 	description:
