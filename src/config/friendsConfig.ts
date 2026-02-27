@@ -12,16 +12,16 @@ export const friendsPageConfig: FriendsPageConfig = {
 export const friendsConfig: FriendLink[] = [
 	{
 		title: "ChoxyPop",
-		imgurl: "https://cdn.choxypop.com/profile.webp",
+		imgurl: "https://cdn.choxypop.com/equipo/choxy.webp",
 		desc: "La persona detras de todo esto.",
-		siteurl: "https://docs.choxypop.com",
+		siteurl: "https://go.choxypop.com",
 		tags: ["Creador"],
 		weight: 10, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
 	},
 	{
 		title: "Mafiul8",
-		imgurl: "https://cdn.choxypop.com/mafiul8.png",
+		imgurl: "https://cdn.choxypop.com/equipo/mafiul8.png",
 		desc: "El artista detras de todos los dibujos.",
 		siteurl: "https://x.com/Mafiul8",
 		tags: ["Artista"],
@@ -30,7 +30,7 @@ export const friendsConfig: FriendLink[] = [
 	},
 	{
 		title: "AstarDev",
-		imgurl: "https://cdn.choxypop.com/astardev.jpg",
+		imgurl: "https://cdn.choxypop.com/equipo/astardev.jpg",
 		desc: "El modelador 3D detras de los rendesrs y modelos 3D.",
 		siteurl: "https://x.com/astardev",
 		tags: ["Modelador 3D"],

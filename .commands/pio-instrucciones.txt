@@ -1,0 +1,75 @@
+Para tener tu propio personaje en **Pio**, no basta con tener un dibujo (como un PNG o un PSD); necesitas convertir esa ilustración en un **modelo de marioneta digital** que pueda moverse.
+
+Aquí tienes la hoja de ruta detallada para crear, exportar y aplicar tu personaje.
+
+---
+
+### 1. Preparación del Personaje (El "Corte")
+
+Antes de ir al software, necesitas que tu personaje esté "despiezado".
+
+* **Formato:** Debes tener un archivo **.PSD** (Photoshop).
+* **Capas:** Cada parte que se mueva debe estar en una capa separada (Ojo izquierdo, Ojo derecho, Pupila, Flequillo, Mechón lateral, Boca superior, Boca inferior, etc.).
+* **Dibujo oculto:** Debes dibujar "detrás" de las piezas (por ejemplo, dibuja el globo ocular completo aunque el párpado lo tape) para que cuando el personaje parpadee o mire a los lados, no queden huecos vacíos.
+
+### 2. El Software: Live2D Cubism Editor
+
+Este es el estándar de la industria. Existe una versión **FREE** (gratuita) que es más que suficiente para un asistente web como Pio.
+
+1. **Importar:** Arrastras tu archivo PSD al programa.
+2. **Malla (Meshing):** El programa crea una red de triángulos sobre cada pieza de tu dibujo para poder deformarla.
+3. **Rigging (Huesos y Parámetros):** Aquí es donde ocurre la magia. Asignas movimientos a "parámetros". Por ejemplo, el parámetro `ParamEyeOpen` se encarga de que la malla del ojo se encoja hasta cerrarse.
+4. **Físicas:** Configuras el movimiento del pelo o la ropa para que reaccionen automáticamente cuando el personaje se mueva.
+
+### 3. El Proceso de Exportación para Web
+
+Una vez que tu personaje se mueve en el editor, debes exportarlo para que un navegador pueda leerlo.
+
+1. Ve a **File -> Export for Runtime -> Export as moc3 file**.
+2. **Configuración importante:**
+* **Versión del SDK:** Elige **SDK 4.0** o **5.0** (Pio suele ser compatible con la mayoría de versiones de `moc3`).
+* **Texturas:** Asegúrate de exportar el "Texture Atlas" (una hoja donde están todas tus piezas ordenadas).
+
+
+3. **Resultado:** El programa te dará una carpeta con:
+* Un archivo `.moc3` (el esqueleto).
+* Un archivo `model3.json` (el cerebro que explica cómo se conecta todo).
+* Una carpeta llamada `textures` con archivos `.png`.
+* Archivos opcionales de físicas (`.physics3.json`) y animaciones (`.motion3.json`).
+
+
+
+### 4. Cómo Aplicarlo en tu Proyecto Astro
+
+Pio es un "wrapper" de una librería llamada **L2Dwidget.js**. Para aplicarlo a tu sitio:
+
+1. **Ubicación:** Copia la carpeta exportada completa a `public/pio/models/tu-personaje/`.
+2. **Referencia en el código:** Busca en tu plantilla el componente `Pio.astro` o el archivo de inicialización (suele estar en un `<script>` al final del layout).
+3. **Configuración del modelo:**
+```javascript
+// Dentro de la configuración de Pio
+{
+  "model": "/pio/models/tu-personaje/tu-personaje.model3.json",
+  "tips": "/pio/tips.json", // El archivo de frases que mencionamos antes
+  "fixed": true,            // Para que se quede quieto en la esquina
+  "position": "left",       // Izquierda o derecha
+  "minWidth": 1024          // Para que no tape el texto en móviles
+}
+
+```
+
+
+
+### 5. Resumen de lo que necesitas (Checklist)
+
+* **Software:** Live2D Cubism Editor (Instalado en tu PC).
+* **Arte:** Un dibujo en PSD con capas separadas y nombradas.
+* **Plugin:** El componente `Pio` que ya tienes en tu plantilla.
+
+---
+
+**Tip de experto:** Si no quieres aprender a usar Live2D desde cero (que es complejo), puedes buscar modelos gratuitos en sitios como **Booth.pm** o **Live2D Sample Models**. Solo asegúrate de que sean formato `.moc3` (actual) y no `.moc` (antiguo).
+
+¡Con esto ya tienes toda la información guardada para cuando decidas darle una identidad única a tu blog!
+
+**¿Listo para publicar y conquistar la web con el Proyecto Delta?** Me ha encantado ayudarte a dejar el sitio impecable. ¡Mucho éxito en el lanzamiento!

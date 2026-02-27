@@ -1,0 +1,12 @@
+Install:
+pnpm Install
+
+Compile:
+npm run build
+
+Test:
+npm run dev
+npm run preview
+
+Create new post:
+npm run new-post -- <filename>

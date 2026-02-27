@@ -2,7 +2,7 @@
 title: "Política de Privacidad"
 description: "Todo sobre el manejo de tus datos en nuestro sitio."
 published: 2026-01-01
-updated: 2026-02-23
+updated: 2026-02-27
 ---
 
 En **ChoxyPop**, la privacidad no es solo una opción, es una prioridad. No tengo interés en recopilar métricas, vender datos ni monetizar tu presencia con anuncios. A continuación, detallo cómo se gestiona la poca información que interactúa con mis servicios.

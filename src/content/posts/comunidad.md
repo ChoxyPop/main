@@ -1,9 +1,9 @@
 ---
 title: "Comunidad"
-published: 2026-02-25
+published: 2026-02-26
 # updated: 2024-05-21 Opcional: si quieres mostrar cuándo se editó
 description: "Apartado sobre la comunidad de ChoxyPop, enlaces para unirse y una introducción."
-image: "https://cdn.choxypop.com/comunidad.png"
+image: "https://cdn.choxypop.com/proyectos/comunidad.png"
 tags: []
 category: "Oficial"
 draft: false

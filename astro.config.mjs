@@ -146,7 +146,7 @@ export default defineConfig({
 				const url = new URL(page);
 				const pathname = url.pathname;
 
-				if (pathname === "/sponsor/" && !siteConfig.pages.sponsor) {
+				if (pathname === "/apoyo/" && !siteConfig.pages.sponsor) {
 					return false;
 				}
 				if (pathname === "/muro/" && !siteConfig.pages.guestbook) {

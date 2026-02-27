@@ -12,6 +12,6 @@ Lidero el **ChoxyPop Team**, donde junto a artistas como **Mafiul8** (Dibujo) y 
 Me encargo de toda la infraestructura digital, desde este sitio web hasta la administración de mis redes. Mi objetivo es crear un espacio seguro y divertido para todos. Me encanta jugar **Minecraft** y **Roblox** con mi comunidad y experimentar con nuevas tecnologías.
 
 ---
-📑 **Más sobre mí (detallado)** [docs.choxypop.com](https://docs.choxypop.com/team/choxy)
-📧 **Contacto:** [info@choxypop.com](mailto:info@choxypop.com)  
-🌐 **Todos mis enlaces:** [go.choxypop.com](https://go.choxypop.com)
+* **Más sobre mí (detallado):** [docs.choxypop.com](https://docs.choxypop.com/team/choxy)
+* **Contacto:** [info@choxypop.com](mailto:info@choxypop.com)  
+* **Todos mis enlaces:** [go.choxypop.com](https://go.choxypop.com)

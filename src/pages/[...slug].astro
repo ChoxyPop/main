@@ -32,7 +32,6 @@ import { url } from "@/utils/url-utils";
 export async function getStaticPaths() {
 	const blogEntries = await getSortedPosts();
 	return blogEntries.map((entry) => {
-		// 将 id 转换为 slug（移除扩展名）以匹配路由参数
 		const slug = removeFileExtension(entry.id);
 		return {
 			params: { slug },
@@ -67,9 +66,9 @@ if (processedImage) {
 	);
 	if (isLocal) {
 		const basePath = getFileDirFromPath(entry.filePath || "");
-		const files = import.meta.glob<ImageMetadata>("../../**", {
-			import: "default",
-		});
+		const files = import.meta.glob<ImageMetadata>("../../content/posts/**/*.{png,jpg,jpeg,webp}", {
+    import: "default",
+});
 		let normalizedPath = path
 			.normalize(path.join("../../", basePath, processedImage))
 			.replace(/\\/g, "/");
@@ -91,7 +90,7 @@ if (posterAvatarUrl) {
 		posterAvatarUrl.startsWith("data:")
 	);
 	if (isLocalAvatar) {
-		const files = import.meta.glob<ImageMetadata>("../../**", {
+		const files = import.meta.glob<ImageMetadata>("../../content/posts/**/*.{png,jpg,jpeg,webp}", {
 			import: "default",
 		});
 		const normalizedPath = path
@@ -295,7 +294,7 @@ const jsonLd = {
                   {
                     sponsorConfig.showButtonInPost && siteConfig.pages.sponsor && (
                       <a
-                        href={url("/sponsor/")}
+                        href={url("/apoyo/")}
                         class="inline-flex items-center gap-2 px-6 py-3 bg-(--primary) text-white dark:text-black/70 rounded-lg font-medium hover:bg-(--primary)/80 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
                       >
                         <span>{i18n(I18nKey.sponsor)}</span>

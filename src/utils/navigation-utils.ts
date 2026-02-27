@@ -154,10 +154,11 @@ export function isHomePage(): boolean {
 
 /**
  * 检查是否为文章页面
+ * Posts URL
  */
 export function isPostPage(): boolean {
 	const path = getCurrentPath();
-	return path.startsWith(url("/contenido/"));
+	return path.startsWith(url("/"));
 }
 
 /**
