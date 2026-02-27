@@ -19,16 +19,16 @@ export const sponsorConfig: SponsorConfig = {
 
 	// 赞助方式列表
 	methods: [
-		/*{
-			name: "支付宝",
-			icon: "fa7-brands:alipay",
+		{
+			name: "Binance",
+			icon: "fa7-solid:gift",
 			// 收款码图片路径（需要放在 public 目录下）
-			qrCode: "/assets/images/sponsor/alipay.png",
+			qrCode: "/assets/images/apoyo/binance.png",
 			link: "",
-			description: "使用 支付宝 扫码赞助",
+			description: "Doname con criptomonedas de forma anonima",
 			enabled: true,
 		},
-		{
+		/*{
 			name: "微信",
 			icon: "fa7-brands:weixin",
 			qrCode: "/assets/images/sponsor/wechat.png",
@@ -39,7 +39,7 @@ export const sponsorConfig: SponsorConfig = {
 		{
 			name: "ko-fi",
 			icon: "simple-icons:kofi",
-			qrCode: "",
+			qrCode: "/assets/images/apoyo/kofi.png",
 			link: "https://ko-fi.com/choxypop",
 			description: "Compra un Cafe para Choxy",
 			enabled: true,
