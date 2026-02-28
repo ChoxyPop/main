@@ -185,7 +185,7 @@ const widgetId =
 </div>
 
 <!-- Hidden Audio -->
-<audio class="audio-player hidden" crossorigin="anonymous" title={i18n(I18nKey.musicAudioPlayer)}></audio>
+<audio class="audio-player hidden" crossorigin="anonymous" preload="none" title={i18n(I18nKey.musicAudioPlayer)}></audio>
 
 <!-- Loading Overlay -->
     <div class="music-loading absolute inset-0 z-20 flex flex-col items-center justify-center bg-white/60 dark:bg-[#1e1e1e]/60 backdrop-blur-[2px] transition-opacity duration-300 opacity-0 pointer-events-none rounded-xl" aria-busy="true" aria-hidden="true">
@@ -408,7 +408,7 @@ const widgetId =
                 state.playlist = config.localPlaylist || [];
             }
 
-            if (state.playlist.length > 0) {
+            /*if (state.playlist.length > 0) {
                 renderPlaylist();
                 // If random mode is initial setting, shuffle start
                 let startIndex = 0;
@@ -419,7 +419,24 @@ const widgetId =
                 loadTrack(startIndex, false);
                 initVolume();
                 updateModeUI(); // Reflect initial mode in UI
-            } else {
+            }*/ 
+            if (state.playlist.length > 0) {
+    renderPlaylist();
+    let startIndex = 0;
+    if (state.playMode === 2) {
+        startIndex = Math.floor(Math.random() * state.playlist.length);
+    }
+    
+    state.currentIndex = startIndex;
+    const track = state.playlist[startIndex];
+    ui.title.innerText = track.name;
+    ui.artist.innerText = track.artist;
+    if (track.pic) ui.cover.src = track.pic;
+    
+    initVolume();
+    updateModeUI();
+    updatePlaylistUI();
+} else {
                 ui.title.innerText = config.i18n.noSongs;
             }
         } catch (e) {
@@ -580,14 +597,28 @@ const widgetId =
         }
     }
 
-    function togglePlay() {
+    /*function togglePlay() {
         if (ui.audio.paused) {
             ui.audio.play().then(() => updatePlayState(true));
         } else {
             ui.audio.pause();
             updatePlayState(false);
         }
+    }*/
+
+    function togglePlay() {
+    if (!ui.audio.src || ui.audio.src === window.location.href) {
+        const track = state.playlist[state.currentIndex];
+        ui.audio.src = track.url;
     }
+
+    if (ui.audio.paused) {
+        ui.audio.play().then(() => updatePlayState(true));
+    } else {
+        ui.audio.pause();
+        updatePlayState(false);
+    }
+}
 
     function playNext(auto = false) {
         let nextIndex;
