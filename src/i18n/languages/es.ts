@@ -82,7 +82,8 @@ export const es: Translation = {
 	[Key.bangumi]: "Colecciones",
 
 	[Key.bangumiTitle]: "Mi colección",
-	[Key.bangumiSubtitle]: "Aquí puedes ver mi progreso en series, libros, música y juegos.",
+	[Key.bangumiSubtitle]:
+		"Aquí puedes ver mi progreso en series, libros, música y juegos.",
 	[Key.bangumiFilterAll]: "Todo",
 	[Key.bangumiFilterWatched]: "Visto",
 	[Key.bangumiFilterWatching]: "Viendo",
@@ -166,9 +167,11 @@ export const es: Translation = {
 		"RSS (Really Simple Syndication) es un formato estándar para publicar contenido actualizado frecuentemente. Con RSS, puedes:",
 	[Key.rssBenefit1]:
 		"Obtener el contenido más reciente sin visitar manualmente el sitio",
-	[Key.rssBenefit2]: "Gestionar suscripciones a múltiples sitios en un solo lugar",
+	[Key.rssBenefit2]:
+		"Gestionar suscripciones a múltiples sitios en un solo lugar",
 	[Key.rssBenefit3]: "Evitar perderte actualizaciones y artículos importantes",
-	[Key.rssBenefit4]: "Disfrutar de una experiencia de lectura limpia y sin anuncios",
+	[Key.rssBenefit4]:
+		"Disfrutar de una experiencia de lectura limpia y sin anuncios",
 	[Key.rssHowToUse]:
 		"Se recomienda usar Feedly, Inoreader u otros lectores RSS para suscribirse a este sitio.",
 	[Key.rssCopied]: "¡Enlace RSS copiado al portapapeles!",

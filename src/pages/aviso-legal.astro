@@ -2,32 +2,39 @@
 import { getEntry, render } from "astro:content";
 import Markdown from "@components/common/Markdown.astro";
 import { Icon } from "astro-icon/components";
+import dayjs from "dayjs";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
-import dayjs from "dayjs";
 
-const entryName = "aviso-legal"; 
+const entryName = "aviso-legal";
 const entry = await getEntry("spec", entryName);
 
 if (!entry) {
-	throw new Error(`Archivo Markdown no encontrado en src/content/spec/${entryName}.md`);
+	throw new Error(
+		`Archivo Markdown no encontrado en src/content/spec/${entryName}.md`,
+	);
 }
 
 const { Content, remarkPluginFrontmatter } = await render(entry);
 
-const title = remarkPluginFrontmatter?.title || (entry.data as any)?.title || "Sin título";
-const description = remarkPluginFrontmatter?.description || (entry.data as any)?.description || "";
+const title =
+	remarkPluginFrontmatter?.title || (entry.data as Record<string, unknown>)?.title || "Sin título";
+const description =
+	remarkPluginFrontmatter?.description ||
+	(entry.data as Record<string, unknown>)?.description ||
+	"";
 
 // Extraer fecha: buscamos 'updated', luego 'published', luego 'lastMod'
-const rawDate = remarkPluginFrontmatter?.updated || 
-                remarkPluginFrontmatter?.published || 
-                remarkPluginFrontmatter?.lastMod || 
-                (entry.data as any)?.updated || 
-                new Date();
+const rawDate =
+	remarkPluginFrontmatter?.updated ||
+	remarkPluginFrontmatter?.published ||
+	remarkPluginFrontmatter?.lastMod ||
+	(entry.data as Record<string, unknown>)?.updated ||
+	new Date();
 
 const dateStr = dayjs(rawDate).format("YYYY-MM-DD");
-const pageIcon = "material-symbols:shield-lock"; 
+const pageIcon = "material-symbols:shield-lock";
 ---
 
 <MainGridLayout title={title} description={description}>

@@ -66,9 +66,12 @@ if (processedImage) {
 	);
 	if (isLocal) {
 		const basePath = getFileDirFromPath(entry.filePath || "");
-		const files = import.meta.glob<ImageMetadata>("../../content/posts/**/*.{png,jpg,jpeg,webp}", {
-    import: "default",
-});
+		const files = import.meta.glob<ImageMetadata>(
+			"../../content/posts/**/*.{png,jpg,jpeg,webp}",
+			{
+				import: "default",
+			},
+		);
 		let normalizedPath = path
 			.normalize(path.join("../../", basePath, processedImage))
 			.replace(/\\/g, "/");
@@ -90,9 +93,12 @@ if (posterAvatarUrl) {
 		posterAvatarUrl.startsWith("data:")
 	);
 	if (isLocalAvatar) {
-		const files = import.meta.glob<ImageMetadata>("../../content/posts/**/*.{png,jpg,jpeg,webp}", {
-			import: "default",
-		});
+		const files = import.meta.glob<ImageMetadata>(
+			"../../content/posts/**/*.{png,jpg,jpeg,webp}",
+			{
+				import: "default",
+			},
+		);
 		const normalizedPath = path
 			.normalize(path.join("../../", posterAvatarUrl))
 			.replace(/\\/g, "/");

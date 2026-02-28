@@ -21,7 +21,23 @@ export const siteConfig: SiteConfig = {
 
 	// 站点关键词
 	keywords: [
-		"ChoxyPop", "Choxy", "Femboy", "Celeste", "Proyecto Delta", "ChoxyPop Team", "Animaciones 3D", "Minicomics", "Comunidad", "AstarDev", "Mafiul8", "Lore Choxy", "Roblox", "Arte Digital", "Minecraft", "Memes", "Kawaii", 
+		"ChoxyPop",
+		"Choxy",
+		"Femboy",
+		"Celeste",
+		"Proyecto Delta",
+		"ChoxyPop Team",
+		"Animaciones 3D",
+		"Minicomics",
+		"Comunidad",
+		"AstarDev",
+		"Mafiul8",
+		"Lore Choxy",
+		"Roblox",
+		"Arte Digital",
+		"Minecraft",
+		"Memes",
+		"Kawaii",
 	],
 
 	// 主题色

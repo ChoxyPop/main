@@ -5,7 +5,8 @@ export const announcementConfig: AnnouncementConfig = {
 	title: "¡Conoceme!",
 
 	// 公告内容
-	content: "¿Quieres saber más sobre mí? ¡Haz clic en el botón para descubrir más!",
+	content:
+		"¿Quieres saber más sobre mí? ¡Haz clic en el botón para descubrir más!",
 
 	// 是否允许用户关闭公告
 	closable: true,

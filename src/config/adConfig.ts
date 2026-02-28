@@ -42,8 +42,7 @@ export const adConfig1: AdConfig = {
 // 广告配置2 - 完整内容广告
 export const adConfig2: AdConfig = {
 	title: "Titulo adConfig.ts",
-	content:
-		"Contenido adConfig.ts",
+	content: "Contenido adConfig.ts",
 	image: {
 		src: "assets/images/cover.avif",
 		alt: "Sobre mi",
