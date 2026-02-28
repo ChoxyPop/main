@@ -27,7 +27,9 @@ const { Content, remarkPluginFrontmatter } = await render(entry);
  */
 
 const title =
-	remarkPluginFrontmatter?.title || (entry.data as Record<string, unknown>)?.title || "Sin título";
+	remarkPluginFrontmatter?.title ||
+	(entry.data as Record<string, unknown>)?.title ||
+	"Sin título";
 const description =
 	remarkPluginFrontmatter?.description ||
 	(entry.data as Record<string, unknown>)?.description ||
