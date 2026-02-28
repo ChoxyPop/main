@@ -3,7 +3,7 @@ title: "Blog"
 published: 2026-02-23
 # updated: 2024-05-21 Opcional: si quieres mostrar cuándo se editó
 description: "Apartado sobre el blog oficial y el contenido que se sube allí, como actualizaciones de los sitios, noticias y análisis."
-image: "https://cdn.choxypop.com/proyectos/blog.png"
+image: "./images/blog.png"
 tags: []
 category: "Oficial"
 draft: false

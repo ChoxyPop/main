@@ -3,7 +3,7 @@ title: "El proyecto delta"
 published: 2026-02-22
 # updated: 2024-05-21 Opcional: si quieres mostrar cuándo se editó
 description: "Todo sobre el libro oficial de Choxy llamado 'el proyecto delta' y donde leerlo."
-image: "https://cdn.choxypop.com/proyectos/el-proyecto-delta.png"
+image: "./images/el-proyecto-delta.png"
 tags: []
 category: "Oficial"
 draft: false

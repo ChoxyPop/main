@@ -3,7 +3,7 @@ title: "Galeria"
 published: 2026-02-27
 # updated: 2024-05-21 Opcional: si quieres mostrar cuándo se editó
 description: "Todo el contenido visual de Choxy en un solo lugar, para que disfrutes de los dibujos, minicomics y memes facilmente."
-image: "https://cdn.choxypop.com/proyectos/galeria.png"
+image: "./images/galeria.png"
 tags: []
 category: "Oficial"
 draft: false

@@ -3,7 +3,7 @@ title: "Redes Oficiales"
 published: 2026-02-25
 # updated: 2024-05-21 Opcional: si quieres mostrar cuándo se editó
 description: "Todo sobre nuestras redes sociales oficiales y perfiles, para poder conectarte con nosotros."
-image: "https://cdn.choxypop.com/proyectos/redes-oficiales.png"
+image: "./images/redes-oficiales.png"
 tags: []
 category: "Oficial"
 draft: false

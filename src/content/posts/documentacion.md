@@ -3,7 +3,7 @@ title: "Documentación"
 published: 2026-02-24
 # updated: 2024-05-21 Opcional: si quieres mostrar cuándo se editó
 description: "Apartado sobre la documentación oficial que contiene información sobre el equipo, objetivos, reglas de la comunidad, etc."
-image: "https://cdn.choxypop.com/proyectos/documentacion.png"
+image: "./images/documentacion.png"
 tags: []
 category: "Oficial"
 draft: false
