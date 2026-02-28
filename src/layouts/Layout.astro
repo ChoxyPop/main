@@ -102,7 +102,9 @@ const siteLang = lang.replace("_", "-");
             <MicrosoftClarity clarityId={siteConfig.analytics.microsoftClarityId} />
     )}
 
+
     <title>{pageTitle}</title>
+    <link rel="canonical" href={new URL(Astro.url.pathname, siteConfig.site_url).href} />
     <meta
       name="description"
       content={description || siteConfig.description || pageTitle}
@@ -115,7 +117,7 @@ const siteLang = lang.replace("_", "-");
     <meta name="author" content={profileConfig.name} />
 
     <meta property="og:site_name" content={siteConfig.title} />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, siteConfig.site_url).href} />
     <meta property="og:title" content={pageTitle} />
     <meta
       property="og:description"
@@ -131,7 +133,7 @@ const siteLang = lang.replace("_", "-");
     }
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:url" content={new URL(Astro.url.pathname, siteConfig.site_url).href} />
     <meta name="twitter:title" content={pageTitle} />
     <meta
       name="twitter:description"
