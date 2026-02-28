@@ -16,14 +16,14 @@ if (!entry) {
 
 const { Content, remarkPluginFrontmatter } = await render(entry);
 
-const title = remarkPluginFrontmatter?.title || entry.data?.title || "Sin título";
-const description = remarkPluginFrontmatter?.description || entry.data?.description || "";
+const title = remarkPluginFrontmatter?.title || (entry.data as any)?.title || "Sin título";
+const description = remarkPluginFrontmatter?.description || (entry.data as any)?.description || "";
 
 // Extraer fecha: buscamos 'updated', luego 'published', luego 'lastMod'
 const rawDate = remarkPluginFrontmatter?.updated || 
                 remarkPluginFrontmatter?.published || 
                 remarkPluginFrontmatter?.lastMod || 
-                entry.data?.updated || 
+                (entry.data as any)?.updated || 
                 new Date();
 
 const dateStr = dayjs(rawDate).format("YYYY-MM-DD");
