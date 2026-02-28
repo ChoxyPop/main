@@ -104,7 +104,7 @@ const siteLang = lang.replace("_", "-");
 
 
     <title>{pageTitle}</title>
-    <link rel="canonical" href={new URL(Astro.url.pathname, siteConfig.site_url).href} />
+    <link rel="canonical" href={`${siteConfig.site_url}${Astro.url.pathname}`} />
     <meta
       name="description"
       content={description || siteConfig.description || pageTitle}
